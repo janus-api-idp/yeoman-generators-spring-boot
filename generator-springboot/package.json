@@ -1,0 +1,15 @@
+{
+  "name": "generator-springboot",
+  "version": "0.0.1",
+  "description": "A Yeoman generator for generating SpringBoot producer api",
+  "files": [
+    "generators"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^4.12.0"
+  }
+}
