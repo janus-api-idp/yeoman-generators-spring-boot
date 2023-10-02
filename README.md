@@ -11,6 +11,6 @@ We have to install the following  :
 3. `npm install -g yo`
 
 
-Then to execute that, cd to \generator-springboot (name of your generator ) and type :
+To execute the generator, run:
 
 `yo springboot`
