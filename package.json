@@ -1,7 +1,7 @@
 {
   "name": "generator-springboot",
   "version": "0.0.1",
-  "description": "A Yeoman generator for generating SpringBoot producer api",
+  "description": "A Yeoman generator for generating SpringBoot API producer",
   "files": [
     "generators"
   ],
