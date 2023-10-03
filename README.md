@@ -24,24 +24,24 @@ Once during execution, you will be asked to provide the name of the spec file ya
 Here is the sequence of execution :
 
 ```Generating OpenApi Spec with SpringBoot Application
-? What is the application name ? hydroquebec
-? What's your package application name ? qc.hydroquebec.employee
+? What is the application name ? openapi
+? What's your package application name ? com.openapi.employee
 ? What's your package type ? jar
 ? Is Spring Data Required as well (y/n) ? y
 ? What's your input spec file name ? employee.yaml
-   create hydroquebec\pom.xml
-   create hydroquebec\employee.yaml
+   create openapi\pom.xml
+   create openapi\employee.yaml
 Running Maven to generate Java code source...
 Running command : mvn to build the project
 [INFO] Scanning for projects...
 [INFO]
-[INFO] ----------------< qc.hydroquebec.employee:hydroquebec >-----------------
-[INFO] Building hydroquebec 1.0.0
+[INFO] ----------------< com.openapi.employee:openapi >-----------------
+[INFO] Building openapi 1.0.0
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO]
-[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ hydroquebec ---
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ openapi ---
 [INFO]
-[INFO] --- openapi-generator-maven-plugin:4.3.1:generate (default) @ hydroquebec ---
+[INFO] --- openapi-generator-maven-plugin:4.3.1:generate (default) @ openapi ---
 [INFO] No .openapi-generator-ignore file found.
 [INFO] OpenAPI Generator: spring (server)
 [INFO] Generator 'spring' is considered stable.
@@ -53,11 +53,11 @@ Running command : mvn to build the project
 [WARNING] 'scheme' not defined in the spec (2.0). Default to [http] for server URL [http://api/v1]
 [WARNING] 'scheme' not defined in the spec (2.0). Default to [http] for server URL [http://api/v1]
 [WARNING] 'scheme' not defined in the spec (2.0). Default to [http] for server URL [http://api/v1]
-[INFO] writing file C:\Users\elbion\Documents\REDHAT Repos\yeoman-generators-spring-boot\generator-springboot\hydroquebec\src\main\java\qc\hydroquebec\employee\model\Employee.java
+[INFO] writing file C:\Users\elbion\Documents\REDHAT Repos\yeoman-generators-spring-boot\generator-springboot\openapi\src\main\java\com\openapi\employee\model\Employee.java
 ...
 ...
-ava/qc/hydroquebec/employee/RFC3339DateFormat.java: C:\Users\elbion\Documents\REDHAT Repos\yeoman-generators-spring-boot\generator-springboot\hydroquebec\src\main\java\qc\hydroquebec\employee\RFC3339DateFormat.java uses or overrides a deprecated API.
-[INFO] /C:/Users/elbion/Documents/REDHAT Repos/yeoman-generators-spring-boot/generator-springboot/hydroquebec/src/main/java/qc/hydroquebec/employee/RFC3339DateFormat.java: Recompile with -Xlint:deprecation for details.
+ava/com/openapi/employee/RFC3339DateFormat.java: C:\Users\elbion\Documents\REDHAT Repos\yeoman-generators-spring-boot\generator-springboot\openapi\src\main\java\com\openapi\employee\RFC3339DateFormat.java uses or overrides a deprecated API.
+[INFO] /C:/Users/elbion/Documents/REDHAT Repos/yeoman-generators-spring-boot/generator-springboot/openapi/src/main/java/com/openapi/employee/RFC3339DateFormat.java: Recompile with -Xlint:deprecation for details.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -65,7 +65,7 @@ ava/qc/hydroquebec/employee/RFC3339DateFormat.java: C:\Users\elbion\Documents\RE
 [INFO] Finished at: 2023-10-03T09:17:48-04:00
 [INFO] ------------------------------------------------------------------------
 Done Running Maven...
-Application hydroquebec with the package name qc.hydroquebec.employee and package type jar and spec employee.yaml generated successfully```
+Application openapi with the package name com.openapi.employee and package type jar and spec employee.yaml generated successfully```
 
 
 To execute the generator, run:
