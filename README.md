@@ -23,7 +23,7 @@ Once during execution, you will be asked to provide the name of the spec file ya
 
 Here is the sequence of execution :
 
-Generating OpenApi Spec with SpringBoot Application
+```Generating OpenApi Spec with SpringBoot Application
 ? What is the application name ? hydroquebec
 ? What's your package application name ? qc.hydroquebec.employee
 ? What's your package type ? jar
@@ -65,7 +65,7 @@ ava/qc/hydroquebec/employee/RFC3339DateFormat.java: C:\Users\elbion\Documents\RE
 [INFO] Finished at: 2023-10-03T09:17:48-04:00
 [INFO] ------------------------------------------------------------------------
 Done Running Maven...
-Application hydroquebec with the package name qc.hydroquebec.employee and package type jar and spec employee.yaml generated successfully
+Application hydroquebec with the package name qc.hydroquebec.employee and package type jar and spec employee.yaml generated successfully```
 
 
 To execute the generator, run:
