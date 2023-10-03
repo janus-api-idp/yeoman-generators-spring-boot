@@ -28,7 +28,15 @@ function prompting() {
       name: "isSpringDataRequired",
       message: "Is Spring Data Required as well (y/n) ?",
       default: "y"
+    },
+    {
+      type: "string",
+      name: "specFileName",
+      message: "What's your input spec file name ?",
+      default: "packageEndingName.yaml"
     }
+
+
 
   ];
 

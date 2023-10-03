@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId><%= packageName %></groupId>
-    <artifactId>openapi-spring</artifactId>
+    <artifactId><%= appName %></artifactId>
     <packaging><%= packageType %></packaging>
     <name><%= appName %></name>
     <version>1.0.0</version>
@@ -46,7 +46,7 @@
                             <library>spring-boot</library>
                             <output>${project.basedir}</output>
                             <inputSpec>
-                                ${project.basedir}/src/main/resources/employee.yaml
+                                <%= specFileName %>
                             </inputSpec>
 
                             <configOptions>
@@ -56,11 +56,11 @@
                                 <version>${project.version}</version>
                                 <dateLibrary>java8</dateLibrary>
                                 <sourceFolder>src/main/java</sourceFolder>
-                                <basePackage>com.redhat.employee</basePackage>
-                                <invokerPackage>com.redhat.employee</invokerPackage>
-                                <configPackage>com.redhat.employee.config</configPackage>
-                                <modelPackage>com.redhat.employee.model</modelPackage>
-                                <apiPackage>com.redhat.employee.api</apiPackage>
+                                <basePackage><%= packageName %></basePackage>
+                                <invokerPackage><%= packageName %></invokerPackage>
+                                <configPackage><%= packageName %>.config</configPackage>
+                                <modelPackage><%= packageName %>.model</modelPackage>
+                                <apiPackage><%= packageName %>.api</apiPackage>
                             </configOptions>
                         </configuration>
                     </execution>
