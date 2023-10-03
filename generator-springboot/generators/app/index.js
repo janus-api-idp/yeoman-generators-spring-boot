@@ -10,7 +10,7 @@ module.exports = class extends Generator {
   }
 
  initializing() {
-    this.log("Generating HydroQuebec OpenApi Spec with SpringBoot Application");
+    this.log("Generating OpenApi Spec with SpringBoot Application");
   }
 
  get prompting() {

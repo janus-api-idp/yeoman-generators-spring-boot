@@ -33,7 +33,7 @@ function prompting() {
       type: "string",
       name: "specFileName",
       message: "What's your input spec file name ?",
-      default: "packageEndingName.yaml"
+      default: "employee.yaml"
     }
 
 
