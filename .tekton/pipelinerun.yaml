@@ -9,6 +9,7 @@ spec:
   workspaces:
   - name: maven-settings
     emptyDir: {}
+  - name: quay-credentials
   - name: maven-repo
     volumeClaimTemplate:
       spec:
