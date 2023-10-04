@@ -20,7 +20,7 @@ module.exports = class extends Generator {
  writing() {
     this.fs.copyTpl(
       this.templatePath("pom.xml.tpl"),
-      this.destinationPath(this.configOptions.appName + "/pom.xml"),
+      this.destinationPath("pom.xml"),
       {
         appName: this.configOptions.appName,
 	packageName: this.configOptions.packageName,
@@ -32,7 +32,7 @@ module.exports = class extends Generator {
 
    this.fs.copyTpl(
       this.templatePath(this.configOptions.specFileName + ".tpl"),
-      this.destinationPath(this.configOptions.appName + "/" + this.configOptions.specFileName),
+      this.destinationPath(this.configOptions.specFileName),
       {
         appName: this.configOptions.appName
       }
@@ -44,7 +44,6 @@ module.exports = class extends Generator {
 	this.log(`Running Maven to generate Java code source... `);
 	const command = this._isWin() ? 'mvn' : './mvn';
 	this.log(`Running command : ${command} to build the project`);
-	shell.cd(`${this.configOptions.appName}`);
 	shell.exec(`${command} clean compile`);
 	this.log(`Done Running Maven...`);
     this.log(`Application ${this.configOptions.appName} with the package name ${this.configOptions.packageName} and package type ${this.configOptions.packageType} and spec ${this.configOptions.specFileName} generated successfully`);

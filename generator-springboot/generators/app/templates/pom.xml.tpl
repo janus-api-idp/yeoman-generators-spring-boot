@@ -98,20 +98,17 @@
             <artifactId>jackson-databind-nullable</artifactId>
             <version>0.1.0</version>
         </dependency>
-    <!-- Bean Validation API support -->
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
         </dependency>
-
-<%_ if (isSpringDataRequired === 'y') { _%>
-        <!-- JPA Dependency -->
+	<%_ if (isSpringDataRequired === 'y') { _%>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
             <version>2.3.0.RELEASE</version>
         </dependency>
-<%_ } _%>
+	<%_ } _%>
 
     </dependencies>
 </project>
