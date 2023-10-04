@@ -1,12 +1,13 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
-  name: hqoas-spring-maven-pipeline
+  name: generator-springboot-maven-pipeline
   namespace: tekton-tasks
 spec:
   workspaces:
   - name: maven-repo
   - name: maven-settings
+  - name: quay-credentials
 
   params:
     - name: dockerfilePath
